@@ -7,5 +7,7 @@ Rails.application.routes.draw do
     get 'profile', to: 'profiles#show'
   end
   
+  
+  
   root to: 'home#index'
 end
