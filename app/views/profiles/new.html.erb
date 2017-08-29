@@ -16,5 +16,10 @@
      <%= f.label :location, class: 'sr-only' %>
      <%= f.text_field :location, class: 'form-control', placeholder: "Enter location" %>
   </div>
+  <div>
+   <%= f.label :avatar, class: 'sr-only' %>
+   <%= f.file_field :avatar %>
+  </div>
    <%= f.submit "Save Profile", class: 'btn btn-default pull-right' %>
  <% end %>
+ 
