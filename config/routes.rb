@@ -1,5 +1,9 @@
 Rails.application.routes.draw do
   devise_for :users, controllers: { registrations: "registrations" }
+  resources :conversations do
+    resources :messages
+  end
+  
   get 'home/index'
   
   resources :users, only: [] do
